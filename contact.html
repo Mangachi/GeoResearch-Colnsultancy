@@ -4,25 +4,20 @@
   <meta charset="UTF-8">
   <title>GeoResearch Consultancy - Contact</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <img src="https://raw.githubusercontent.com/Mangachi/GeoResearch-Colnsultancy/main/GEOResearch%20Consultancy%20logo.jpeg" alt="Logo">
-    <div class="title">
-      <h1>GeoResearch Consultancy</h1>
-      <p>Expert Solutions for all your Research Queries</p>
-    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <section>
+  <section class="contact-form">
     <h2>Contact Us</h2>
-    <p>Phone: +255653385567</p>
     <form onsubmit="handleSubmit(event)">
       <input type="text" id="name" placeholder="Your Name" required>
       <input type="email" id="email" placeholder="Your Email" required>
@@ -35,13 +30,5 @@
   <footer>
     <p>&copy; 2026 GeoResearch Consultancy. All rights reserved.</p>
   </footer>
-
-  <script>
-    function handleSubmit(event) {
-      event.preventDefault();
-      const name = document.getElementById('name').value;
-      document.getElementById('response').textContent = `Thank you, ${name}! Your message has been received.`;
-    }
-  </script>
 </body>
 </html>
