@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Dispersion Screening — GeoResearch Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="breadcrumb mono"><a href="index.html">Home</a><span class="sep">/</span><a href="index.html#services">Services</a><span class="sep">/</span>Air dispersion screening</div>
+
+<header class="page-hero">
+  <div class="hero-stripes" aria-hidden="true">
+    <div class="stripe stripe-1"></div>
+    <div class="stripe stripe-2"></div>
+  </div>
+  <div class="page-hero-inner">
+    <div>
+      <p class="eyebrow mono light">Dust &amp; emissions screening</p>
+      <h1>Air dispersion screening</h1>
+      <p class="page-hero-lede">
+        Screening-level dispersion modelling for dust and emissions around
+        industrial, mining and construction sites &mdash; cross-referenced
+        with drone-captured aerial imagery to identify sources, receptors
+        and wind-driven plume paths.
+      </p>
+    </div>
+    <div class="page-hero-visual">
+      <svg viewBox="0 0 360 320" role="img" aria-label="Dispersion plume diagram showing concentration gradients downwind of an emission source with a wind rose">
+        <rect x="20" y="20" width="320" height="280" rx="14" fill="#1B3A5E"/>
+        <g id="plumeViz" transform="translate(40,70)"></g>
+        <g transform="translate(270,60)" id="windRose"></g>
+        <g transform="translate(40,260)">
+          <text class="ts-svg mono" fill="#9FF0DC">PM10 CONCENTRATION GRADIENT</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- APPROACH -->
+<section class="content">
+  <p class="eyebrow mono">Approach</p>
+  <h2>Screening before detailed modelling</h2>
+  <p class="lede">
+    Before commissioning full regulatory dispersion models (e.g. AERMOD,
+    CALPUFF), a screening assessment estimates likely plume extent and
+    identifies sensitive receptors &mdash; helping prioritise where
+    detailed monitoring or modelling is actually needed.
+  </p>
+
+  <div class="stat-grid" style="margin-top:2.5rem;">
+    <div class="stat-card">
+      <div class="stat-card-num">50<span class="unit">&micro;g/m&sup3;</span></div>
+      <div class="stat-card-label">WHO 24-hour guideline value for PM10</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">15<span class="unit">&micro;g/m&sup3;</span></div>
+      <div class="stat-card-label">WHO 24-hour guideline value for PM2.5</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">8&ndash;direction</div>
+      <div class="stat-card-label">Wind rose used to identify dominant transport directions</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">Drone overlay</div>
+      <div class="stat-card-label">Aerial imagery used to map sources, receptors and land cover</div>
+    </div>
+  </div>
+</section>
+
+<!-- DISPERSION MODEL -->
+<section class="content">
+  <div class="content-grid-2 reverse">
+    <div class="content-visual bordered">
+      <svg viewBox="0 0 560 320" role="img" aria-label="Concentration decay chart showing pollutant concentration decreasing with distance downwind from source">
+        <rect width="560" height="320" rx="12" fill="#FFFFFF"/>
+        <g transform="translate(50,40)">
+          <text class="ts-dark mono">PM10 CONCENTRATION VS DOWNWIND DISTANCE</text>
+          <g transform="translate(0,20)" id="dispersionDecayChart"></g>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow mono">Reading the plume</p>
+      <h2>Concentration decreases with distance</h2>
+      <p>
+        Dust and emission concentrations fall off rapidly with distance
+        from the source &mdash; following an approximate Gaussian plume
+        relationship dependent on wind speed, atmospheric stability and
+        source emission rate.
+      </p>
+      <p>
+        We model this against your site layout, identifying the distance
+        at which concentrations are predicted to fall below guideline
+        thresholds, and highlighting any sensitive receptors (residences,
+        schools, water bodies) within that footprint.
+      </p>
+      <div class="tag-list">
+        <span class="tag">Gaussian plume screening</span>
+        <span class="tag">Receptor mapping</span>
+        <span class="tag">Wind rose analysis</span>
+        <span class="tag">Drone source mapping</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERABLES -->
+<section class="content">
+  <p class="eyebrow mono">Deliverables</p>
+  <h2>What you receive</h2>
+  <div class="output-grid">
+    <div class="output-card-light">
+      <h4>Site source map</h4>
+      <p>Drone-derived orthomosaic annotated with identified emission sources and site boundaries.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Wind rose analysis</h4>
+      <p>Historical wind speed and direction frequency analysis for the site location.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Screening plume contours</h4>
+      <p>Estimated concentration contours overlaid on the site map for key pollutants.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Receptor register</h4>
+      <p>Identified sensitive receptors within the screening footprint, with distances and directions.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Guideline comparison table</h4>
+      <p>Predicted concentrations compared against WHO and national air quality guideline values.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Recommendations report</h4>
+      <p>Mitigation measures and recommendations for further monitoring where thresholds are approached.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="content">
+  <div class="cta-band">
+    <div>
+      <h3>Planning an environmental assessment?</h3>
+      <p>We can scope a combined drone survey and dispersion screening for your site.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Discuss your site</a>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="content">
+  <p class="eyebrow mono">Related services</p>
+  <div class="related-services">
+    <a href="gis-mapping.html" class="related-card">
+      <p class="eyebrow mono">Source mapping</p>
+      <h4>GIS &amp; drone mapping</h4>
+      <p>Aerial imagery and orthomosaics to map emission sources and site layout.</p>
+    </a>
+    <a href="noise-monitoring.html" class="related-card">
+      <p class="eyebrow mono">Environmental</p>
+      <h4>Noise &amp; acoustic modelling</h4>
+      <p>Combine air and noise screening for comprehensive environmental compliance.</p>
+    </a>
+    <a href="data-analysis.html" class="related-card">
+      <p class="eyebrow mono">Next step</p>
+      <h4>Data analysis</h4>
+      <p>Statistical trend analysis of monitoring data over time.</p>
+    </a>
+  </div>
+</section>
+
+<script src="common.js"></script>
+<script src="script.js"></script>
+<script src="air-page.js"></script>
+</body>
+</html>

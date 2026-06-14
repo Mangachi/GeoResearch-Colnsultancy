@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIS &amp; Drone Mapping — GeoResearch Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="breadcrumb mono"><a href="index.html">Home</a><span class="sep">/</span><a href="index.html#services">Services</a><span class="sep">/</span>GIS &amp; drone mapping</div>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="hero-stripes" aria-hidden="true">
+    <div class="stripe stripe-1"></div>
+    <div class="stripe stripe-2"></div>
+  </div>
+  <div class="page-hero-inner">
+    <div>
+      <p class="eyebrow mono light">Aerial intelligence &mdash; DJI Mavic 3 Multispectral</p>
+      <h1>GIS &amp; drone mapping</h1>
+      <p class="page-hero-lede">
+        Licensed RTK-enabled multispectral drone surveys producing
+        research-grade spatial datasets: orthomosaics, vegetation indices,
+        terrain models and environmental overlays &mdash; delivered with full
+        metadata for GIS integration and academic citation.
+      </p>
+    </div>
+    <div class="page-hero-visual">
+      <svg viewBox="0 0 360 320" role="img" aria-label="DJI Mavic 3 Multispectral drone illustration with five camera sensors and RTK module">
+        <g transform="translate(180,140)">
+          <!-- arms -->
+          <g stroke="#5E8AD5" stroke-width="3" stroke-linecap="round">
+            <line x1="-26" y1="-18" x2="-95" y2="-60"/>
+            <line x1="26" y1="-18" x2="95" y2="-60"/>
+            <line x1="-26" y1="18" x2="-95" y2="60"/>
+            <line x1="26" y1="18" x2="95" y2="60"/>
+          </g>
+          <!-- rotors -->
+          <g fill="none" stroke="#9FF0DC" stroke-width="2">
+            <ellipse cx="-95" cy="-60" rx="26" ry="6"/>
+            <ellipse cx="-95" cy="-60" rx="6" ry="26"/>
+            <ellipse cx="95" cy="-60" rx="26" ry="6"/>
+            <ellipse cx="95" cy="-60" rx="6" ry="26"/>
+            <ellipse cx="-95" cy="60" rx="26" ry="6"/>
+            <ellipse cx="-95" cy="60" rx="6" ry="26"/>
+            <ellipse cx="95" cy="60" rx="26" ry="6"/>
+            <ellipse cx="95" cy="60" rx="6" ry="26"/>
+          </g>
+          <g fill="#234374">
+            <circle cx="-95" cy="-60" r="5"/>
+            <circle cx="95" cy="-60" r="5"/>
+            <circle cx="-95" cy="60" r="5"/>
+            <circle cx="95" cy="60" r="5"/>
+          </g>
+          <!-- body -->
+          <rect x="-50" y="-30" width="100" height="60" rx="14" fill="#234374"/>
+          <!-- RTK module on top -->
+          <rect x="-16" y="-46" width="32" height="18" rx="4" fill="#1B3A5E" stroke="#9FF0DC" stroke-width="1.5"/>
+          <circle cx="0" cy="-37" r="3" fill="#9FF0DC"/>
+          <!-- multispectral camera array (4 lenses + RGB) -->
+          <g transform="translate(0,16)">
+            <circle cx="-30" cy="0" r="8" fill="#1B3A5E" stroke="#5E8AD5" stroke-width="1.5"/>
+            <circle cx="-10" cy="0" r="8" fill="#1B3A5E" stroke="#9CCB5E" stroke-width="1.5"/>
+            <circle cx="10" cy="0" r="8" fill="#1B3A5E" stroke="#C9743D" stroke-width="1.5"/>
+            <circle cx="30" cy="0" r="8" fill="#1B3A5E" stroke="#E8D85E" stroke-width="1.5"/>
+            <circle cx="0" cy="16" r="10" fill="#1B3A5E" stroke="#F4F7FB" stroke-width="1.5"/>
+          </g>
+        </g>
+        <text x="180" y="280" text-anchor="middle" class="mono" fill="#9FF0DC" font-size="11">RGB + GREEN + RED + RED EDGE + NIR &mdash; RTK MODULE</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- SENSOR SPECS -->
+<section class="content">
+  <p class="eyebrow mono">Sensor package</p>
+  <h2>Five synchronized cameras, one flight</h2>
+  <p class="lede">
+    The Mavic 3 Multispectral captures an RGB image alongside four discrete
+    narrow-band sensors in the same instant, every band geo-tagged with the
+    onboard RTK module for centimetre-level positional accuracy without
+    ground control points.
+  </p>
+
+  <div class="band-strip" style="margin-top:2.5rem;">
+    <div class="band-card">
+      <div class="band-vis band-rgb"></div>
+      <p class="band-name">RGB</p>
+      <p class="band-desc mono">Visible light &mdash; true-colour base map</p>
+    </div>
+    <div class="band-card">
+      <div class="band-vis band-green"></div>
+      <p class="band-name">Green &mdash; 560nm</p>
+      <p class="band-desc mono">Canopy reflectance, chlorophyll content</p>
+    </div>
+    <div class="band-card">
+      <div class="band-vis band-red"></div>
+      <p class="band-name">Red &mdash; 650nm</p>
+      <p class="band-desc mono">Chlorophyll absorption, plant stress</p>
+    </div>
+    <div class="band-card">
+      <div class="band-vis band-rededge"></div>
+      <p class="band-name">Red edge &mdash; 730nm</p>
+      <p class="band-desc mono">Early stress detection, nitrogen status</p>
+    </div>
+    <div class="band-card">
+      <div class="band-vis band-nir"></div>
+      <p class="band-name">NIR &mdash; 840nm</p>
+      <p class="band-desc mono">Biomass, vegetation vigour</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPEC TABLE -->
+<section class="content">
+  <div class="content-grid-2">
+    <div>
+      <p class="eyebrow mono">Platform specification</p>
+      <h2>DJI Mavic 3 Multispectral</h2>
+      <p>
+        A folding quadcopter platform purpose-built for agricultural and
+        environmental survey work, pairing a 20MP RGB camera with a four-band
+        multispectral array and integrated RTK for survey-grade accuracy.
+      </p>
+      <div class="tag-list">
+        <span class="tag">RTK positioning</span>
+        <span class="tag">4-band multispectral</span>
+        <span class="tag">20MP RGB</span>
+        <span class="tag">Omnidirectional sensing</span>
+        <span class="tag">43min flight time</span>
+      </div>
+    </div>
+    <div class="spec-table-wrap">
+      <table class="spec-table">
+        <tbody>
+          <tr><th>RGB sensor</th><td>20MP, 4/3 CMOS</td></tr>
+          <tr><th>Multispectral bands</th><td>Green 560nm, Red 650nm, Red edge 730nm, NIR 840nm</td></tr>
+          <tr><th>Positioning</th><td>RTK module, sub-5cm accuracy with network correction</td></tr>
+          <tr><th>Max flight time</th><td>&asymp; 43 minutes</td></tr>
+          <tr><th>Typical survey altitude</th><td>60&ndash;120m AGL</td></tr>
+          <tr><th>Ground sample distance</th><td>&asymp; 2.1cm/px at 80m</td></tr>
+          <tr><th>Onboard sunlight sensor</th><td>Yes &mdash; irradiance correction for consistent reflectance</td></tr>
+          <tr><th>Output formats</th><td>GeoTIFF, JPEG, DNG, RTK-tagged EXIF</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERABLES -->
+<section class="content">
+  <p class="eyebrow mono">Every flight, processed</p>
+  <h2>Mapping deliverables</h2>
+  <p class="lede">Raw flight data is processed into the following outputs, delivered as GeoTIFF / shapefile packages compatible with QGIS and ArcGIS.</p>
+
+  <div class="output-grid" style="margin-top:2.5rem;">
+    <div class="output-card-light">
+      <div class="gis-vis">
+        <svg viewBox="0 0 240 160" aria-hidden="true">
+          <defs><clipPath id="orthoClip"><rect width="240" height="160" rx="10"/></clipPath></defs>
+          <rect width="240" height="160" rx="10" class="gv-bg"/>
+          <g id="orthoFull" clip-path="url(#orthoClip)"></g>
+        </svg>
+      </div>
+      <h4>Orthomosaic</h4>
+      <p>Stitched, geo-referenced true-colour base map at cm-level resolution for boundary, area and asset mapping.</p>
+    </div>
+    <div class="output-card-light">
+      <div class="gis-vis">
+        <svg viewBox="0 0 240 160" aria-hidden="true">
+          <rect width="240" height="160" class="gv-bg"/>
+          <g id="ndviFull"></g>
+        </svg>
+      </div>
+      <h4>NDVI index map</h4>
+      <p>Normalized Difference Vegetation Index classification highlighting crop health, stress zones and land cover.</p>
+    </div>
+    <div class="output-card-light">
+      <div class="gis-vis">
+        <svg viewBox="0 0 240 160" aria-hidden="true">
+          <rect width="240" height="160" class="gv-bg"/>
+          <g id="ndreFull"></g>
+        </svg>
+      </div>
+      <h4>NDRE index map</h4>
+      <p>Red-edge based index for early-stage stress and nitrogen status detection, before symptoms are visible.</p>
+    </div>
+    <div class="output-card-light">
+      <div class="gis-vis">
+        <svg viewBox="0 0 240 160" aria-hidden="true">
+          <rect width="240" height="160" class="gv-bg"/>
+          <g id="dsmFull"></g>
+        </svg>
+      </div>
+      <h4>Digital surface model</h4>
+      <p>Elevation and terrain data for drainage planning, slope analysis and volumetric calculations.</p>
+    </div>
+    <div class="output-card-light">
+      <div class="gis-vis">
+        <svg viewBox="0 0 240 160" aria-hidden="true">
+          <rect width="240" height="160" class="gv-bg"/>
+          <g id="changeFull"></g>
+        </svg>
+      </div>
+      <h4>Time-series change</h4>
+      <p>Repeat-flight comparisons tracking growth stage, canopy change or land disturbance across seasons.</p>
+    </div>
+    <div class="output-card-light">
+      <div class="gis-vis">
+        <svg viewBox="0 0 240 160" aria-hidden="true">
+          <rect width="240" height="160" class="gv-bg"/>
+          <g id="pointCloudFull"></g>
+        </svg>
+      </div>
+      <h4>3D point cloud</h4>
+      <p>Dense reconstructed point cloud for volumetric stockpile measurement and structural inspection.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NDVI DEEP DIVE -->
+<section class="content">
+  <div class="content-grid-2">
+    <div class="content-visual bordered">
+      <svg viewBox="0 0 560 420" role="img" aria-label="Detailed NDVI vegetation index map with classification legend and field coordinates">
+        <rect width="560" height="420" rx="12" class="map-bg-dark"/>
+        <g id="ndviDetailGrid"></g>
+        <g fill="none" stroke="#0D3149" stroke-width="1" opacity="0.15">
+          <rect x="0.5" y="0.5" width="559" height="419" rx="12"/>
+        </g>
+        <g transform="translate(24,350)">
+          <text class="ts-svg mono">NDVI CLASSIFICATION</text>
+          <g transform="translate(0,12)">
+            <rect width="20" height="10" fill="#8B3A2E"/>
+            <rect x="20" width="20" height="10" fill="#C9743D"/>
+            <rect x="40" width="20" height="10" fill="#E8D85E"/>
+            <rect x="60" width="20" height="10" fill="#9CCB5E"/>
+            <rect x="80" width="20" height="10" fill="#3D8B4A"/>
+          </g>
+          <text x="0" y="38" class="ts-svg mono">-0.1&ndash;0.2 bare / stressed</text>
+          <text x="0" y="54" class="ts-svg mono">0.6&ndash;0.9 dense healthy canopy</text>
+        </g>
+        <g class="map-coords mono" transform="translate(536,28)" text-anchor="end">
+          <text class="ts-svg">-3.3667&deg;, 36.6833&deg;</text>
+          <text y="16" class="ts-svg">alt 80m &middot; GSD 2.1cm/px &middot; RTK fixed</text>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow mono">Reading the index</p>
+      <h2>NDVI &amp; NDRE explained</h2>
+      <p>
+        NDVI (Normalized Difference Vegetation Index) compares red and
+        near-infrared reflectance: healthy, dense vegetation absorbs red
+        light and reflects NIR strongly, producing values toward 0.9. Bare
+        soil, water and stressed or senescent vegetation produce values
+        near zero or negative.
+      </p>
+      <p>
+        NDRE substitutes the red-edge band for red, making it sensitive to
+        chlorophyll and nitrogen changes at the canopy level even before
+        visible discolouration &mdash; useful for early intervention in
+        irrigation, fertilization or pest management.
+      </p>
+      <div class="tag-list">
+        <span class="tag">NDVI = (NIR&minus;Red) / (NIR+Red)</span>
+        <span class="tag">NDRE = (NIR&minus;RedEdge) / (NIR+RedEdge)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLIGHT PLANNING & ACCURACY -->
+<section class="content">
+  <p class="eyebrow mono">Survey design</p>
+  <h2>Flight planning &amp; positional accuracy</h2>
+  <div class="stat-grid" style="margin-top:1.5rem;">
+    <div class="stat-card">
+      <div class="stat-card-num">75<span class="unit">%</span></div>
+      <div class="stat-card-label">Front overlap for orthomosaic reconstruction</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">70<span class="unit">%</span></div>
+      <div class="stat-card-label">Side overlap between flight lines</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">&lt;5<span class="unit">cm</span></div>
+      <div class="stat-card-label">Horizontal accuracy with RTK network correction</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">80<span class="unit">m</span></div>
+      <div class="stat-card-label">Typical AGL altitude for 2.1cm/px GSD</div>
+    </div>
+  </div>
+
+  <div class="content-grid-2" style="margin-top:3rem;">
+    <div class="content-visual bordered">
+      <svg viewBox="0 0 560 360" role="img" aria-label="Flight plan diagram showing lawnmower survey pattern with overlap zones and ground control points">
+        <rect width="560" height="360" rx="12" class="map-bg-dark"/>
+        <g id="flightPlanGrid"></g>
+        <g class="map-coords mono" transform="translate(24,28)">
+          <text class="ts-svg">FLIGHT PLAN &mdash; LAWNMOWER PATTERN</text>
+          <text y="16" class="ts-svg">75% FWD / 70% SIDE OVERLAP</text>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <h3>Why overlap matters</h3>
+      <p>
+        High forward and side overlap ensures every ground point appears in
+        multiple images from different angles &mdash; the redundancy
+        photogrammetry software needs to triangulate accurate elevation and
+        eliminate parallax distortion in the final orthomosaic.
+      </p>
+      <h3 style="margin-top:1.5rem;">Ground control &amp; RTK</h3>
+      <p>
+        The onboard RTK module receives correction signals to tag each image
+        with survey-grade coordinates in real time, removing the need for
+        manually placed ground control points in most surveys &mdash; though
+        we deploy GCPs for projects requiring independent third-party
+        verification.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="content">
+  <p class="eyebrow mono">Applications</p>
+  <h2>Where this fits your research</h2>
+  <div class="output-grid">
+    <div class="output-card-light">
+      <h4>Agricultural field trials</h4>
+      <p>Plot-level NDVI/NDRE time series for crop variety trials, yield estimation and irrigation uniformity assessment.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Land use &amp; land cover studies</h4>
+      <p>Classification of vegetation, bare ground, water and built-up areas for environmental and land-use change research.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Environmental compliance</h4>
+      <p>Site boundary verification, vegetation clearance monitoring and dust/disturbance footprint mapping for EIA reporting.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Erosion &amp; drainage studies</h4>
+      <p>Digital surface models for slope, flow accumulation and erosion risk modelling in watershed research.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Infrastructure &amp; volumetrics</h4>
+      <p>Stockpile and excavation volume calculations from dense 3D point clouds for construction monitoring.</p>
+    </div>
+    <div class="output-card-light">
+      <h4>Conservation &amp; forestry</h4>
+      <p>Canopy cover assessment, biomass proxy mapping and change detection for forest monitoring projects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="content">
+  <div class="cta-band">
+    <div>
+      <h3>Have a study site in mind?</h3>
+      <p>We scope flight plans against your research questions, site access and reporting deadlines.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Request a survey</a>
+  </div>
+</section>
+
+<!-- RELATED SERVICES -->
+<section class="content">
+  <p class="eyebrow mono">Related services</p>
+  <div class="related-services">
+    <a href="data-analysis.html" class="related-card">
+      <p class="eyebrow mono">Next step</p>
+      <h4>Data analysis</h4>
+      <p>Process raster outputs and field data into statistical summaries and visualizations.</p>
+    </a>
+    <a href="air-dispersion.html" class="related-card">
+      <p class="eyebrow mono">Compliance</p>
+      <h4>Air dispersion screening</h4>
+      <p>Combine aerial imagery with dust dispersion data for environmental compliance.</p>
+    </a>
+    <a href="methodology-design.html" class="related-card">
+      <p class="eyebrow mono">Foundation</p>
+      <h4>Methodology design</h4>
+      <p>Integrate drone survey design into your overall study methodology.</p>
+    </a>
+  </div>
+</section>
+
+<script src="common.js"></script>
+<script src="script.js"></script>
+<script src="gis-page.js"></script>
+</body>
+</html>

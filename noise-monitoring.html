@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noise &amp; Acoustic Monitoring — GeoResearch Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="breadcrumb mono"><a href="index.html">Home</a><span class="sep">/</span><a href="index.html#services">Services</a><span class="sep">/</span>Noise &amp; acoustic modelling</div>
+
+<header class="page-hero">
+  <div class="hero-stripes" aria-hidden="true">
+    <div class="stripe stripe-1"></div>
+    <div class="stripe stripe-2"></div>
+  </div>
+  <div class="page-hero-inner">
+    <div>
+      <p class="eyebrow mono light">Sound level surveys &amp; modelling</p>
+      <h1>Noise &amp; acoustic monitoring</h1>
+      <p class="page-hero-lede">
+        Perimeter and receptor noise-level surveys for environmental and
+        occupational health assessments &mdash; with day/night Leq
+        measurements, frequency analysis and propagation modelling against
+        regulatory limits.
+      </p>
+    </div>
+    <div class="page-hero-visual">
+      <svg viewBox="0 0 360 320" role="img" aria-label="Waveform and noise contour visualization showing sound level measurements over a 24-hour period">
+        <rect x="20" y="20" width="320" height="280" rx="14" fill="#1B3A5E"/>
+        <g transform="translate(40,50)" id="noiseWaveform"></g>
+        <g transform="translate(40,180)" id="leqProfile"></g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- APPROACH -->
+<section class="content">
+  <p class="eyebrow mono">Methodology</p>
+  <h2>Continuous &amp; spot measurements</h2>
+  <p class="lede">
+    Sound level meters are deployed at site boundaries and sensitive
+    receptor locations, logging continuous equivalent sound level (Leq)
+    over representative day and night periods, alongside spot
+    measurements during peak activity.
+  </p>
+
+  <div class="stat-grid" style="margin-top:2.5rem;">
+    <div class="stat-card">
+      <div class="stat-card-num">55<span class="unit">dB(A)</span></div>
+      <div class="stat-card-label">Typical WHO night-time guideline for outdoor residential areas</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">24<span class="unit">hr</span></div>
+      <div class="stat-card-label">Continuous logging period for representative Leq data</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">Class 1</div>
+      <div class="stat-card-label">Precision sound level meters used for compliance-grade measurement</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-num">Octave band</div>
+      <div class="stat-card-label">Frequency analysis to identify tonal or low-frequency components</div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY/NIGHT LEVELS -->
+<section class="content">
+  <div class="content-grid-2 reverse">
+    <div class="content-visual bordered">
+      <svg viewBox="0 0 560 320" role="img" aria-label="Bar chart comparing day and night noise levels at multiple monitoring points against regulatory limits">
+        <rect width="560" height="320" rx="12" fill="#FFFFFF"/>
+        <g transform="translate(50,40)">
+          <text class="ts-dark mono">DAY VS NIGHT Leq BY MONITORING POINT (dB(A))</text>
+          <g transform="translate(0,20)" id="noiseDayNightChart"></g>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow mono">Day/night comparison</p>
+      <h2>Why night-time matters most</h2>
+      <p>
+        Regulatory noise limits are typically stricter at night, reflecting
+        increased sensitivity to disturbance during sleeping hours.
+        Monitoring at multiple boundary points allows us to identify which
+        receptors are closest to or exceeding applicable limits.
+      </p>
+      <p>
+        Where exceedances are identified, we model the contribution of
+        individual noise sources (e.g. specific equipment, traffic) to
+        prioritise mitigation measures.
+      </p>
+      <div class="tag-list">
+        <span class="tag">Leq, L90, Lmax</span>
+        <span class="tag">Octave band analysis</span>
+        <span class="tag">Source attribution</span>
+        <span class="tag">Propagation modelling</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREQUENCY ANALYSIS -->
+<section class="content">
+  <p class="eyebrow mono">Spectral analysis</p>
+  <h2>Octave band frequency profile</h2>
+  <p class="lede">
+    Frequency analysis helps identify whether noise has a tonal character
+    (e.g. fan or motor hum) that may require additional assessment under
+    some regulatory frameworks, even if overall dB(A) levels are within
+    limits.
+  </p>
+  <div class="content-visual bordered" style="margin-top:2rem;">
+    <svg viewBox="0 0 800 280" role="img" aria-label="Octave band frequency spectrum chart showing sound pressure level across frequency bands from 31.5Hz to 8kHz">
+      <rect width="800" height="280" rx="12" fill="#FFFFFF"/>
+      <g transform="translate(60,40)" id="octaveBandChart"></g>
+    </svg>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="content">
+  <div class="cta-band">
+    <div>
+      <h3>Need a compliance noise survey?</h3>
+      <p>Tell us your site boundaries and nearby receptors &mdash; we'll propose a monitoring plan.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Request a survey</a>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="content">
+  <p class="eyebrow mono">Related services</p>
+  <div class="related-services">
+    <a href="air-dispersion.html" class="related-card">
+      <p class="eyebrow mono">Environmental</p>
+      <h4>Air dispersion screening</h4>
+      <p>Combine noise and air quality screening for comprehensive EIA support.</p>
+    </a>
+    <a href="photometric-monitoring.html" class="related-card">
+      <p class="eyebrow mono">Environmental</p>
+      <h4>Photometric monitoring</h4>
+      <p>Add illuminance surveys to your environmental compliance package.</p>
+    </a>
+    <a href="data-analysis.html" class="related-card">
+      <p class="eyebrow mono">Next step</p>
+      <h4>Data analysis</h4>
+      <p>Statistical trend analysis and reporting from monitoring logs.</p>
+    </a>
+  </div>
+</section>
+
+<script src="common.js"></script>
+<script src="script.js"></script>
+<script src="noise-page.js"></script>
+</body>
+</html>
